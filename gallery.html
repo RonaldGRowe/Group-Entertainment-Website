@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+		
+	<!-- Group Project
+
+         Entertainment | Gallery 
+         Author: 	Scott Hansen
+         Date:   	11/6/2013
+         Filename:  gallery.html
+  	-->
+
+  	<link rel="shortcut icon" href="Images/favicon.ico">
+	<link rel="icon" type="image/gif" href="animated_favicon1.gif">
+
+	<head>
+		<title>Entertainment | Gallery</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<meta http-equiv="imagetoolbar" content="no" />
+		<link rel="stylesheet" href="styles/layout.css" type="text/css" />
+		<link rel="stylesheet" href="styles/prettyPhoto.css" type="text/css" />
+		<script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script>
+		<script type="text/javascript" src="scripts/jquery-ui-1.8.12.custom.min.js"></script>
+		<script type="text/javascript" src="scripts/jquery-prettyPhoto.js"></script>
+		
+		<!-- This is the Java Script for the Gallery -->
+		<script type="text/javascript">
+		$(document).ready(function () {
+		    $("#tabcontainer").tabs({
+		        event: "click"
+		    });
+		    $("a[rel^='prettyPhoto']").prettyPhoto({
+		        theme: 'dark_rounded'
+		    });
+		});
+		</script>
+		<style type="text/css">
+		.style1 {
+			text-decoration: underline;
+		}
+		</style>
+	</head>
+
+	<!-- Text In the Top Left -->
+	<body id="top">
+		<div class="wrapper col1">
+		  <div id="header" class="clear">
+		    <div class="fl_left">
+		      <h1><a href="index.html">Entertainment</a></h1>
+		      <p>Fun Activities for Everyone</p>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- Top navigation bar -->
+		<div class="wrapper col1">
+		  <div id="topbar" class="clear">
+		    <ul id="topnav">
+		      <li><a href="index.html">Home</a></li>
+		      <li><a href="motionpictures.html">Motion Pictures</a>
+		      	<ul>
+          		  <li><a href="motionpictures.html#Action Movies">Action Movies</a></li>
+          		  <li><a href="motionpictures.html#Animated Movies">Animated Movies</a></li>
+          		  <li><a href="motionpictures.html#Comedy Movies">Comedy Movies</a></li>
+          		  <li><a href="motionpictures.html#Horror Movies">Horror Movies</a></li>
+          		  <li><a href="motionpictures.html#T.V. Shows">T.V. Shows</a></li>
+        		</ul>
+			  </li>
+		      <li><a href="music.html">Music</a>
+   		      	<ul>
+          		  <li><a href="music.html#Jazz">Jazz</a></li>
+          		  <li><a href="music.html#Blues">Blues</a></li>
+          		  <li><a href="music.html#Zydeco">Zydeco</a></li>
+          		  <li><a href="music.html#Swamp Pop">Swamp Pop</a></li>
+          		  <li><a href="music.html#Live Music">Live Music</a></li> 
+         		</ul>
+        	  </li>
+		      <li><a href="outdoors.html">Outdoors</a>
+   		      	<ul>
+          		  <li><a href="outdoors.html#Fishing">Fishing</a></li>
+          		  <li><a href="outdoors.html#Biking">Biking</a></li>
+          		  <li><a href="outdoors.html#Hunting">Hunting</a></li>
+          		  <li><a href="outdoors.html#Rafting & Kayaking">Water Sports</a></li>
+				  <li><a href="outdoors.html#Skiing">Snow Sports</a></li>
+        		</ul>
+        	  </li>
+		      <li><a href="sports.html">Sports</a>
+   		      	<ul>
+          		  <li><a href="sports.html#Basketball">Basketball</a></li>
+          		  <li><a href="sports.html#Baseball">Baseball</a></li>
+          		  <li><a href="sports.html#Football">Football</a></li>
+          		  <li><a href="sports.html#Soccer">Soccer</a></li>
+          		  <li><a href="sports.html#Lacrosse">Lacrosse</a></li>
+        		</ul>
+        	  </li>
+		      <li><a href="videogames.html">Video Games</a> 
+   		      	<ul>
+          		  <li><a href="videogames.html#Role-Playing Games">Role-Playing Games</a></li>
+          		  <li><a href="videogames.html#Survival Horror">Survival Horror</a></li>
+          		  <li><a href="videogames.html#Platformer">Platformer</a></li>
+          		  <li><a href="videogames.html#Fighter">Fighter</a></li>
+          		  <li><a href="videogames.htmlFirst-Person Shooter">First-Person Shooter</a></li>
+        		</ul>
+        	  </li>
+      		  <li class="active"><a href="gallery.html">Gallery</a>
+      		  	</li>  
+      		  <li class="last"><a href="feedback.html">Feedback</a>
+      		  	</li>
+   		    </ul>
+  		  </div>
+	    </div>
+		
+		<!-- The Start of the Gallery Categories -->
+		<div class="wrapper col2">
+		  <div id="container" class="clear">
+		  
+		    <!-- Second Navigation Bar -->
+		    <div id="tabcontainer">
+		      <ul id="tabnav">
+		        <li><a href="#tabs-1">Motion Picture Photos</a></li>
+		        <li><a href="#tabs-2">Music Photos</a></li>
+		        <li><a href="#tabs-3">Outdoor Photos</a></li>
+		        <li><a href="#tabs-4">Sport Photos</a></li>
+		        <li><a href="#tabs-5">Video Game Photos</a></li>
+		      </ul>
+		      <br/>
+		      
+		      <!-- Motion Picture Photos - Scott Hansen -->
+		      <div id="tabs-1" class="gallery clear">
+		        <ul>
+		          <h2 class="style1">Action Movies</h2>
+		            <li><a href="Images/MotionPictures/Gallery/ActionMovies/IronMan3Img01.jpg" rel="prettyPhoto[gallery1]" title="Iron Man 3"><img src="Images/MotionPictures/Gallery/ActionMovies/IronMan3Img01.jpg" alt="Iron Man 3" /></a></li>
+		            <li><a href="Images/MotionPictures/Gallery/ActionMovies/IronMan3Img02.jpg" rel="prettyPhoto[gallery1]" title="Iron Man 3"><img src="Images/MotionPictures/Gallery/ActionMovies/IronMan3Img02.jpg" alt="Iron Man 3" /></a></li>
+		            <li><a href="Images/MotionPictures/Gallery/ActionMovies/Fast&Furious6Img01.jpg" rel="prettyPhoto[gallery1]" title="Fast & Furious 6"><img src="Images/MotionPictures/Gallery/ActionMovies/Fast&Furious6Img01.jpg" alt="Fast & Furious 6" /></a></li>
+		            <li><a href="Images/MotionPictures/Gallery/ActionMovies/Fast&Furious6Img02.jpg" rel="prettyPhoto[gallery1]" title="Fast & Furious 6"><img src="Images/MotionPictures/Gallery/ActionMovies/Fast&Furious6Img02.jpg" alt="Fast & Furious 6" /></a></li>
+		            <li><a href="Images/MotionPictures/Gallery/ActionMovies/StarTrekIntoDarknessImg01.jpg" rel="prettyPhoto[gallery1]" title="Star Trek Into Darkness"><img src="Images/MotionPictures/Gallery/ActionMovies/StarTrekIntoDarknessImg01.jpg" alt="Star Trek Into Darkness" /></a></li>
+		            <li class="last"><a href="Images/MotionPictures/Gallery/ActionMovies/StarTrekIntoDarknessImg02.jpg" rel="prettyPhoto[gallery1]" title="Star Trek Into Darkness"><img src="Images/MotionPictures/Gallery/ActionMovies/StarTrekIntoDarknessImg02.jpg" alt="Star Trek Into Darkness" /></a></li>
+		          
+		          <h2 class="style1">Animated Movies</h2>
+		            <li><a href="Images/MotionPictures/Gallery/AnimatedMovies/MonstersUniversityImg01.jpg" rel="prettyPhoto[gallery1]" title="Monsters University"><img src="Images/MotionPictures/Gallery/AnimatedMovies/MonstersUniversityImg01.jpg" alt="Monsters University" /></a></li>
+		            <li><a href="Images/MotionPictures/Gallery/AnimatedMovies/MonstersUniversityImg02.jpg" rel="prettyPhoto[gallery1]" title="Monsters University"><img src="Images/MotionPictures/Gallery/AnimatedMovies/MonstersUniversityImg02.jpg" alt="Monsters University" /></a></li>
+		            <li><a href="Images/MotionPictures/Gallery/AnimatedMovies/DespicableMe2Img01.jpg" rel="prettyPhoto[gallery1]" title="Despicable Me 2"><img src="Images/MotionPictures/Gallery/AnimatedMovies/DespicableMe2Img01.jpg" alt="Despicable Me 2" /></a></li>
+		            <li><a href="Images/MotionPictures/Gallery/AnimatedMovies/DespicableMe2Img02.jpg" rel="prettyPhoto[gallery1]" title="Despicable Me 2"><img src="Images/MotionPictures/Gallery/AnimatedMovies/DespicableMe2Img02.jpg" alt="Despicable Me 2" /></a></li>
+		            <li><a href="Images/MotionPictures/Gallery/AnimatedMovies/TheSmurfs2Img01.jpg" rel="prettyPhoto[gallery1]" title="The Smurfs 2"><img src="Images/MotionPictures/Gallery/AnimatedMovies/TheSmurfs2Img01.jpg" alt="The Smurfs 2" /></a></li>
+		            <li class="last"><a href="Images/MotionPictures/Gallery/AnimatedMovies/TheSmurfs2Img02.jpg" rel="prettyPhoto[gallery1]" title="The Smurfs 2"><img src="Images/MotionPictures/Gallery/AnimatedMovies/TheSmurfs2Img02.jpg" alt="The Smurfs 2" /></a></li>
+		        
+		          <h2 class="style1">Comedy Movies</h2>
+		            <li><a href="Images/MotionPictures/Gallery/ComedyMovies/IdentityThiefImg01.jpg" rel="prettyPhoto[gallery1]" title="Identity Thief"><img src="Images/MotionPictures/Gallery/ComedyMovies/IdentityThiefImg01.jpg" alt="Identity Thief" /></a></li>
+		            <li><a href="Images/MotionPictures/Gallery/ComedyMovies/IdentityThiefImg02.jpg" rel="prettyPhoto[gallery1]" title="Identity Thief"><img src="Images/MotionPictures/Gallery/ComedyMovies/IdentityThiefImg02.jpg" alt="Identity Thief" /></a></li>
+		            <li><a href="Images/MotionPictures/Gallery/ComedyMovies/HangoverPartIIIImg01.jpg" rel="prettyPhoto[gallery1]" title="Hangover Part III"><img src="Images/MotionPictures/Gallery/ComedyMovies/HangoverPartIIIImg01.jpg" alt="Hangover Part III" /></a></li>
+		            <li><a href="Images/MotionPictures/Gallery/ComedyMovies/HangoverPartIIIImg02.jpg" rel="prettyPhoto[gallery1]" title="Hangover Part III"><img src="Images/MotionPictures/Gallery/ComedyMovies/HangoverPartIIIImg02.jpg" alt="Hangover Part III" /></a></li>
+		            <li><a href="Images/MotionPictures/Gallery/ComedyMovies/21&OverImg01.jpg" rel="prettyPhoto[gallery1]" title="21 & Over"><img src="Images/MotionPictures/Gallery/ComedyMovies/21&OverImg01.jpg" alt="21 & Over" /></a></li>
+		            <li class="last"><a href="Images/MotionPictures/Gallery/ComedyMovies/21&OverImg02.jpg" rel="prettyPhoto[gallery1]" title="21 & Over"><img src="Images/MotionPictures/Gallery/ComedyMovies/21&OverImg02.jpg" alt="21 & Over" /></a></li>
+		        
+		          <h2 class="style1">Horror Movies</h2>
+		            <li><a href="Images/MotionPictures/Gallery/HorrorMovies/TheConjuringImg01.jpg" rel="prettyPhoto[gallery1]" title="The Conjuring"><img src="Images/MotionPictures/Gallery/HorrorMovies/TheConjuringImg01.jpg" alt="The Conjuring" /></a></li>
+		            <li><a href="Images/MotionPictures/Gallery/HorrorMovies/TheConjuringImg02.jpg" rel="prettyPhoto[gallery1]" title="The Conjuring"><img src="Images/MotionPictures/Gallery/HorrorMovies/TheConjuringImg02.jpg" alt="The Conjuring" /></a></li>
+		            <li><a href="Images/MotionPictures/Gallery/HorrorMovies/ThePurgeImg01.jpg" rel="prettyPhoto[gallery1]" title="The Purge"><img src="Images/MotionPictures/Gallery/HorrorMovies/ThePurgeImg01.jpg" alt="The Purge" /></a></li>
+		            <li><a href="Images/MotionPictures/Gallery/HorrorMovies/ThePurgeImg02.jpg" rel="prettyPhoto[gallery1]" title="The Purge"><img src="Images/MotionPictures/Gallery/HorrorMovies/ThePurgeImg02.jpg" alt="The Purge" /></a></li>
+		            <li><a href="Images/MotionPictures/Gallery/HorrorMovies/MamaImg01.jpg" rel="prettyPhoto[gallery1]" title="Mama"><img src="Images/MotionPictures/Gallery/HorrorMovies/MamaImg01.jpg" alt="Mama" /></a></li>
+		            <li class="last"><a href="Images/MotionPictures/Gallery/HorrorMovies/MamaImg02.jpg" rel="prettyPhoto[gallery1]" title="Mama"><img src="Images/MotionPictures/Gallery/HorrorMovies/MamaImg02.jpg" alt="Mama" /></a></li>
+		          
+		          <h2 class="style1">T.V. Shows</h2>
+		            <li><a href="Images/MotionPictures/Gallery/T.V.Shows/BreakingBadImg01.jpg" rel="prettyPhoto[gallery1]" title="Breaking Bad"><img src="Images/MotionPictures/Gallery/T.V.Shows/BreakingBadImg01.jpg" alt="Breaking Bad" /></a></li>
+		            <li><a href="Images/MotionPictures/Gallery/T.V.Shows/BreakingBadImg02.jpg" rel="prettyPhoto[gallery1]" title="Breaking Bad"><img src="Images/MotionPictures/Gallery/T.V.Shows/BreakingBadImg02.jpg" alt="Breaking Bad" /></a></li>
+		            <li><a href="Images/MotionPictures/Gallery/T.V.Shows/GameofThronesImg01.jpg" rel="prettyPhoto[gallery1]" title="Game of Thrones"><img src="Images/MotionPictures/Gallery/T.V.Shows/GameofThronesImg01.jpg" alt="Game of Thrones" /></a></li>
+		            <li><a href="Images/MotionPictures/Gallery/T.V.Shows/GameofThronesImg02.jpg" rel="prettyPhoto[gallery1]" title="Game of Thrones"><img src="Images/MotionPictures/Gallery/T.V.Shows/GameofThronesImg02.jpg" alt="Game of Thrones" /></a></li>
+		            <li><a href="Images/MotionPictures/Gallery/T.V.Shows/TheWalkingDeadImg01.jpg" rel="prettyPhoto[gallery1]" title="The Walking Dead"><img src="Images/MotionPictures/Gallery/T.V.Shows/TheWalkingDeadImg01.jpg" alt="The Walking Dead" /></a></li>
+		            <li id="last" class="last"><a href="Images/MotionPictures/Gallery/T.V.Shows/TheWalkingDeadImg02.jpg" rel="prettyPhoto[gallery1]" title="The Walking Dead"><img src="Images/MotionPictures/Gallery/T.V.Shows/TheWalkingDeadImg02.jpg" alt="The Walking Dead" /></a></li>
+		        </ul>
+		      </div>
+		      
+		      <!-- Music Photos - Ronald Rowe -->
+		      <div id="tabs-2" class="gallery clear">
+		        <ul>
+		          <h2 class="style1">Jazz</h2>
+		            <li><a href="Images/Music/gallery/jazz1.jpg" rel="prettyPhoto[gallery2]" title="Jazz1"><img src="Images/Music/gallery/jazz1.jpg" alt="jazz1" /></a></li>
+		            <li><a href="Images/Music/gallery/jazz2.jpg" rel="prettyPhoto[gallery2]" title="Jazz2"><img src="Images/Music/gallery/jazz2.jpg" alt="jazz2" /></a></li>
+		            <li><a href="Images/Music/gallery/jazz3.jpg" rel="prettyPhoto[gallery2]" title="Jazz3"><img src="Images/Music/gallery/jazz3.jpg" alt="jazz3" /></a></li>
+		            <li><a href="Images/Music/gallery/jazz4.jpg" rel="prettyPhoto[gallery2]" title="Jazz4"><img src="Images/Music/gallery/jazz4.jpg" alt="jazz4" /></a></li>
+		            <li><a href="Images/Music/gallery/jazz5.jpg" rel="prettyPhoto[gallery2]" title="Jazz5"><img src="Images/Music/gallery/jazz5.jpg" alt="jazz5" /></a></li>
+		            <li class="last"><a href="Images/Music/gallery/jazz6.jpg" rel="prettyPhoto[gallery2]" title="Jazz6"><img src="Images/Music/gallery/jazz6.jpg" alt="jazz6" /></a></li>
+
+				  <h2 class="style1">Blues</h2>
+		            <li><a href="Images/Music/gallery/blues1.jpg" rel="prettyPhoto[gallery2]" title="Blues1"><img src="Images/Music/gallery/blues1.jpg" alt="blues1" /></a></li>
+		            <li><a href="Images/Music/gallery/blues2.jpg" rel="prettyPhoto[gallery2]" title="Blues2"><img src="Images/Music/gallery/blues2.jpg" alt="blues2" /></a></li>
+		            <li><a href="Images/Music/gallery/blues3.jpg" rel="prettyPhoto[gallery2]" title="Blues3"><img src="Images/Music/gallery/blues3.jpg" alt="blues3" /></a></li>
+		            <li><a href="Images/Music/gallery/blues4.jpg" rel="prettyPhoto[gallery2]" title="Blues4"><img src="Images/Music/gallery/blues4.jpg" alt="blues4" /></a></li>
+		            <li><a href="Images/Music/gallery/blues5.jpg" rel="prettyPhoto[gallery2]" title="Blues5"><img src="Images/Music/gallery/blues5.jpg" alt="blues5" /></a></li>
+		            <li class="last"><a href="Images/Music/gallery/blues6.jpg" rel="prettyPhoto[gallery2]" title="Blues6"><img src="Images/Music/gallery/blues6.jpg" alt="blues6" /></a></li>
+		          
+		          <h2 class="style1">Zydeco</h2>
+		            <li><a href="Images/Music/gallery/zydeco1.jpg" rel="prettyPhoto[gallery2]" title="Zydeco1"><img src="Images/Music/gallery/zydeco1.jpg" alt="zydeco1" /></a></li>
+		            <li><a href="Images/Music/gallery/zydeco2.jpg" rel="prettyPhoto[gallery2]" title="Zydeco2"><img src="Images/Music/gallery/zydeco2.jpg" alt="zydeco2" /></a></li>
+		            <li><a href="Images/Music/gallery/zydeco3.jpg" rel="prettyPhoto[gallery2]" title="Zydeco3"><img src="Images/Music/gallery/zydeco3.jpg" alt="zydeco3" /></a></li>
+		            <li><a href="Images/Music/gallery/zydeco4.jpg" rel="prettyPhoto[gallery2]" title="Zydeco4"><img src="Images/Music/gallery/zydeco4.jpg" alt="zydeco4" /></a></li>
+		            <li><a href="Images/Music/gallery/zydeco5.jpg" rel="prettyPhoto[gallery2]" title="Zydeco5"><img src="Images/Music/gallery/zydeco5.jpg" alt="zydeco5" /></a></li>
+		            <li class="last"><a href="Images/Music/gallery/zydeco6.jpg" rel="prettyPhoto[gallery2]" title="Zydeco6"><img src="Images/Music/gallery/zydeco6.jpg" alt="zydeco6" /></a></li>
+
+				  <h2 class="style1">Swamp Pop</h2>
+		            <li><a href="Images/Music/gallery/swamp pop1.jpg" rel="prettyPhoto[gallery2]" title="Swamp Pop1"><img src="Images/Music/gallery/swamp pop1.jpg" alt="swamp pop1" /></a></li>
+		            <li><a href="Images/Music/gallery/swamp pop2.jpg" rel="prettyPhoto[gallery2]" title="Swamp Pop2"><img src="Images/Music/gallery/swamp pop2.jpg" alt="swamp pop2" /></a></li>
+		            <li><a href="Images/Music/gallery/swamp pop3.jpg" rel="prettyPhoto[gallery2]" title="Swamp Pop3"><img src="Images/Music/gallery/swamp pop3.jpg" alt="swamp pop3" /></a></li>
+		            <li><a href="Images/Music/gallery/swamp pop4.jpg" rel="prettyPhoto[gallery2]" title="Swamp Pop4"><img src="Images/Music/gallery/swamp pop4.jpg" alt="swamp pop4" /></a></li>
+		            <li><a href="Images/Music/gallery/swamp pop5.jpg" rel="prettyPhoto[gallery2]" title="Swamp Pop5"><img src="Images/Music/gallery/swamp pop5.jpg" alt="swamp pop5" /></a></li>
+		            <li id="last" class="last"><a href="Images/Music/gallery/swamp pop6.jpg" rel="prettyPhoto[gallery2]" title="Swamp Pop6"><img src="Images/Music/gallery/swamp pop6.jpg" alt="swamp pop6" /></a></li>
+		        </ul>
+		      </div>
+		      
+		      <!-- Outdoor Photos - Tyler Landry -->
+		      <div id="tabs-3" class="gallery clear">
+		        <ul>
+		          <h2 class="style1">Fishing</h2>
+			        <li><a href="Images/Outdoors/gallery/gallery1.jpg" rel="prettyPhoto[gallery3]" title="Fishing1"><img src="Images/Outdoors/gallery/gallery1.jpg" alt="Fishing1" /></a></li>
+		            <li><a href="Images/Outdoors/gallery/gallery2.jpg" rel="prettyPhoto[gallery3]" title="Fishing2"><img src="Images/Outdoors/gallery/gallery2.jpg" alt="Fishing2" /></a></li>
+		            <li><a href="Images/Outdoors/gallery/gallery3.jpg" rel="prettyPhoto[gallery3]" title="Fishing3"><img src="Images/Outdoors/gallery/gallery3.jpg" alt="Fishing3" /></a></li>
+		            <li><a href="Images/Outdoors/gallery/gallery4.jpg" rel="prettyPhoto[gallery3]" title="Fishing4"><img src="Images/Outdoors/gallery/gallery4.jpg" alt="Fishing4" /></a></li>
+		            <li><a href="Images/Outdoors/gallery/gallery5.jpg" rel="prettyPhoto[gallery3]" title="Fishing5"><img src="Images/Outdoors/gallery/gallery5.jpg" alt="Fishing5" /></a></li>
+		            <li class="last"><a href="Images/Outdoors/gallery/gallery6.jpg" rel="prettyPhoto[gallery3]" title="Fishing6"><img src="Images/Outdoors/gallery/gallery6.jpg" alt="Fishing6" /></a></li>
+		          
+				  <h2 class="style1">Biking</h2>
+		            <li><a href="Images/Outdoors/gallery/gallery7.jpg" rel="prettyPhoto[gallery3]" title="Biking1"><img src="Images/Outdoors/gallery/gallery7.jpg" alt="Biking" /></a></li>
+		            <li><a href="Images/Outdoors/gallery/gallery8.jpg" rel="prettyPhoto[gallery3]" title="Biking2"><img src="Images/Outdoors/gallery/gallery8.jpg" alt="Biking" /></a></li>
+		            <li><a href="Images/Outdoors/gallery/gallery9.jpg" rel="prettyPhoto[gallery3]" title="Biking3"><img src="Images/Outdoors/gallery/gallery9.jpg" alt="Biking" /></a></li>
+		            <li><a href="Images/Outdoors/gallery/gallery10.jpg" rel="prettyPhoto[gallery3]" title="Biking4"><img src="Images/Outdoors/gallery/gallery10.jpg" alt="Biking" /></a></li>
+		            <li><a href="Images/Outdoors/gallery/gallery11.jpg" rel="prettyPhoto[gallery3]" title="Biking5"><img src="Images/Outdoors/gallery/gallery11.jpg" alt="Biking" /></a></li>
+		            <li class="last"><a href="Images/Outdoors/gallery/gallery12.jpg" rel="prettyPhoto[gallery3]" title="Biking6"><img src="Images/Outdoors/gallery/gallery12.jpg" alt="Biking6" /></a></li>
+		          
+		          <h2 class="style1">Hunting</h2>
+		            <li><a href="Images/Outdoors/gallery/gallery13.jpg" rel="prettyPhoto[gallery3]" title="Hunting1"><img src="Images/Outdoors/gallery/gallery13.jpg" alt="Hunting1" /></a></li>
+		            <li><a href="Images/Outdoors/gallery/gallery14.jpg" rel="prettyPhoto[gallery3]" title="Hunting2"><img src="Images/Outdoors/gallery/gallery14.jpg" alt="Hunting2" /></a></li>
+		            <li><a href="Images/Outdoors/gallery/gallery15.jpg" rel="prettyPhoto[gallery3]" title="Hunting3"><img src="Images/Outdoors/gallery/gallery15.jpg" alt="Hunting3" /></a></li>
+		            <li><a href="Images/Outdoors/gallery/gallery16.jpg" rel="prettyPhoto[gallery3]" title="Hunting4"><img src="Images/Outdoors/gallery/gallery16.jpg" alt="Hunting4" /></a></li>
+		            <li><a href="Images/Outdoors/gallery/gallery17.jpg" rel="prettyPhoto[gallery3]" title="Hunting5"><img src="Images/Outdoors/gallery/gallery17.jpg" alt="Hunting5" /></a></li>
+		            <li class="last"><a href="Images/Outdoors/gallery/gallery18.jpg" rel="prettyPhoto[gallery3]" title="Hunting6"><img src="Images/Outdoors/gallery/gallery18.jpg" alt="Hunting6" /></a></li>
+		        
+				  <h2 class="style1">Water Sports</h2>
+		            <li><a href="Images/Outdoors/gallery/gallery19.jpg" rel="prettyPhoto[gallery3]" title="Rafting & Kayaking1"><img Src="Images/Outdoors/gallery/gallery19.jpg" alt="Rafting & Kayaking1" /></a></li>
+		            <li><a href="Images/Outdoors/gallery/gallery20.jpg" rel="prettyPhoto[gallery3]" title="Rafting & Kayaking2"><img src="Images/Outdoors/gallery/gallery20.jpg" alt="Rafting & Kayaking2" /></a></li>
+		            <li><a href="Images/Outdoors/gallery/gallery21.jpg" rel="prettyPhoto[gallery3]" title="Rafting & Kayaking3"><img src="Images/Outdoors/gallery/gallery21.jpg" alt="Rafting & Kayaking3" /></a></li>
+		            <li><a href="Images/Outdoors/gallery/gallery22.jpg" rel="prettyPhoto[gallery3]" title="Rafting & Kayaking4"><img src="Images/Outdoors/gallery/gallery22.jpg" alt="Rafting & Kayaking4" /></a></li>
+		            <li><a href="Images/Outdoors/gallery/gallery23.jpg" rel="prettyPhoto[gallery3]" title="Rafting & Kayaking5"><img src="Images/Outdoors/gallery/gallery23.jpg" alt="Rafting & Kayaking5" /></a></li>
+		            <li class="last"><a href="Images/Outdoors/gallery/gallery24.jpg" rel="prettyPhoto[gallery3]" title="Rafting & Kayaking6"><img src="Images/Outdoors/gallery/gallery24.jpg" alt="Rafting & Kayaking6" /></a></li>
+			
+			      <h2 class="style1">Snow Sports</h2>
+		            <li><a href="Images/Outdoors/gallery/gallery25.jpg" rel="prettyPhoto[gallery3]" title="Skiing1"><img src="Images/Outdoors/gallery/gallery25.jpg" alt="Skiing1" /></a></li>
+		            <li><a href="Images/Outdoors/gallery/gallery26.jpg" rel="prettyPhoto[gallery3]" title="Skiing2"><img src="Images/Outdoors/gallery/gallery26.jpg" alt="Skiing2" /></a></li>
+		            <li><a href="Images/Outdoors/gallery/gallery27.jpg" rel="prettyPhoto[gallery3]" title="Skiing3"><img src="Images/Outdoors/gallery/gallery27.jpg" alt="Skiing3" /></a></li>
+		            <li><a href="Images/Outdoors/gallery/gallery28.jpg" rel="prettyPhoto[gallery3]" title="Skiing4"><img src="Images/Outdoors/gallery/gallery28.jpg" alt="Skiing4" /></a></li>
+		            <li><a href="Images/Outdoors/gallery/gallery29.jpg" rel="prettyPhoto[gallery3]" title="Skiing5"><img src="Images/Outdoors/gallery/gallery29.jpg" alt="Skiing5" /></a></li>
+		            <li id="last" class="last"><a href="Images/Outdoors/gallery/gallery30.jpg" rel="prettyPhoto[gallery3]" title="Skiing6"><img src="Images/Outdoors/gallery/gallery30.jpg" alt="Skiing6" /></a></li>
+		        </ul>
+		      </div>
+		      
+		      <!-- Sport Photos - Alex Shillow -->
+		      <div id="tabs-4" class="gallery clear">
+		        <ul>
+				  <h2 class="style1">Basketball</h2>
+		            <li><a href="Images/Sports/basketballimg01.jpg" rel="prettyPhoto[gallery4]" title="(Lake Charles, LA)"><img src="Images/Sports/basketballimg01.jpg" alt="Washignton Marion Basketball" /></a></li>
+		            <li><a href="Images/Sports/basketballimg02.jpg" rel="prettyPhoto[gallery4]" title="(Lake Charles, LA)"><img src="Images/Sports/basketballimg02.jpg" alt="Washington Marion Basketball" /></a></li>
+		            <li><a href="Images/Sports/basketballimg03.jpg" rel="prettyPhoto[gallery4]" title="(Chapel Hill, North Carolina)"><img src="Images/Sports/basketballimg03.jpg" alt="North Carolina Tar Heels" /></a></li>
+		            <li><a href="Images/Sports/basketballimg04.jpg" rel="prettyPhoto[gallery4]" title="(Chapel Hill, North Carolina)"><img src="Images/Sports/basketballimg04.jpg" alt="North Carolina Tar Heels" /></a></li>
+		            <li><a href="Images/Sports/basketballimg05.jpg" rel="prettyPhoto[gallery4]" title="(Hosted in Houston, TX)"><img src="Images/Sports/basketballimg05.jpg" alt="NBA All-Star Game" /></a></li>
+		            <li class="last"><a href="Images/Sports/basketballimg06.jpg" rel="prettyPhoto[gallery4]" title="(Miami, FL)"><img src="Images/Sports/basketballimg06.jpg" alt="Miami Heat" /></a></li>
+		          
+		          <h2 class="style1">Baseball</h2>
+		            <li><a href="Images/Sports/baseballimg01.jpg" rel="prettyPhoto[gallery4]" title="(Lake Charles, LA)"><img src="Images/Sports/baseballimg01.jpg" alt="Barbe Bucaneers Baseball" /></a></li>
+		            <li><a href="Images/Sports/baseballimg02.jpg" rel="prettyPhoto[gallery4]" title="(Lake Charles, LA)"><img src="Images/Sports/baseballimg02.jpg" alt="Barbe Bucaneers Baseball" /></a></li>
+		            <li><a href="Images/Sports/baseballimg03.jpg" rel="prettyPhoto[gallery4]" title="(Baton Rouge, LA)"><img src="Images/Sports/baseballimg03.jpg" alt="LSU Tigers" /></a></li>
+		            <li><a href="Images/Sports/baseballimg04.jpg" rel="prettyPhoto[gallery4]" title="(Baton Rouge, LA)"><img src="Images/Sports/baseballimg04.jpg" alt="LSU Tigers" /></a></li>
+		            <li><a href="Images/Sports/baseballimg05.jpg" rel="prettyPhoto[gallery4]" title="(Atlanta, GA)"><img src="Images/Sports/baseballimg05.jpg" alt="Atlanta Braves" /></a></li>
+		            <li class="last"><a href="Images/Sports/baseballimg06.jpg" rel="prettyPhoto[gallery4]" title="(Atlanta, GA)"><img src="Images/Sports/baseballimg06.jpg" alt="Atlanta Braves" /></a></li>
+		          
+		          <h2 class="style1">Football</h2>
+		            <li><a href="Images/Sports/footballimg01.jpg" rel="prettyPhoto[gallery4]" title="(Lake Charles, LA)"><img src="Images/Sports/footballimg01.jpg" alt="Barbe Bucaneers Football" /></a></li>
+		            <li><a href="Images/Sports/footballimg02.jpg" rel="prettyPhoto[gallery4]" title="(Lake Charles, LA)"><img src="Images/Sports/footballimg02.jpg" alt="Barbe Bucaneers Football" /></a></li>
+		            <li><a href="Images/Sports/footballimg03.jpg" rel="prettyPhoto[gallery4]" title="(Lake Charles, LA)"><img src="Images/Sports/footballimg03.jpg" alt="McNeese State Cowboys" /></a></li>
+		            <li><a href="Images/Sports/footballimg04.jpg" rel="prettyPhoto[gallery4]" title="(Lake Charles, LA)"><img src="Images/Sports/footballimg04.jpg" alt="McNeese State Cowboys" /></a></li>
+		            <li><a href="Images/Sports/footballimg05.jpg" rel="prettyPhoto[gallery4]" title="(New Orleans, LA"><img src="Images/Sports/footballimg05.jpg" alt="New Orleans Saints" /></a></li>
+		            <li class="last"><a href="Images/Sports/footballimg06.jpg" rel="prettyPhoto[gallery4]" title="(New Orleans, LA)"><img src="Images/Sports/footballimg06.jpg" alt="New Orleans Saints" /></a></li>
+		          
+		          <h2 class="style1">Soccer</h2>
+		            <li><a href="Images/Sports/soccerimg01.jpg" rel="prettyPhoto[gallery4]" title="(Carmichael, CA)"><img src="Images/Sports/soccerimg01.jpg" alt="Jesuit Marauders Soccer" /></a></li>
+		            <li><a href="Images/Sports/soccerimg02.jpg" rel="prettyPhoto[gallery4]" title="(Carmichael, CA)"><img src="Images/Sports/soccerimg02.jpg" alt="Jesuit Marauders Soccer" /></a></li>
+		            <li><a href="Images/Sports/soccerimg03.jpg" rel="prettyPhoto[gallery4]" title="(Akron, OH)"><img src="Images/Sports/soccerimg03.jpg" alt="University of Akron Soccer" /></a></li>
+		            <li><a href="Images/Sports/soccerimg04.jpg" rel="prettyPhoto[gallery4]" title="(Akron, OH)"><img src="Images/Sports/soccerimg04.jpg" alt="University of Akron Soccer" /></a></li>
+		            <li><a href="Images/Sports/soccerimg05.jpg" rel="prettyPhoto[gallery4]" title="(Los Angeles, CA)"><img src="Images/Sports/soccerimg05.jpg" alt="LA Galaxy VS Real Salt Lake " /></a></li>
+		            <li class="last"><a href="Images/Sports/soccerimg06.jpg" rel="prettyPhoto[gallery4]" title="(Los Angeles, CA)"><img src="Images/Sports/soccerimg06.jpg" alt="LA Galaxy VS Real Salt Lake" /></a></li>
+		          
+		          <h2 class="style1">Lacrosse</h2>
+		            <li><a href="Images/Sports/lacrosseimg01.jpg" rel="prettyPhoto[gallery4]" title="(New Canaan, CT)"><img src="Images/Sports/lacrosseimg01.jpg" alt="New Canaan Rams Lacrosse" /></a></li>
+		            <li><a href="Images/Sports/lacrosseimg02.jpg" rel="prettyPhoto[gallery4]" title="(New Canaan, CT)"><img src="Images/Sports/lacrosseimg02.jpg" alt="New Canaan Rams Lacrosse" /></a></li>
+		            <li><a href="Images/Sports/lacrosseimg03.jpg" rel="prettyPhoto[gallery4]" title="(Durham, NC)"><img src="Images/Sports/lacrosseimg03.jpg" alt="Duke Blue Devils Lacrosse" /></a></li>
+		            <li><a href="Images/Sports/lacrosseimg04.jpg" rel="prettyPhoto[gallery4]" title="(Durham, NC)"><img src="Images/Sports/lacrosseimg04.jpg" alt="Duke Blue Devils Lacrosse" /></a></li>
+		            <li><a href="Images/Sports/lacrosseimg05.jpg" rel="prettyPhoto[gallery4]" title="(Denver, CO)"><img src="Images/Sports/lacrosseimg05.jpg" alt="Charlotte Hounds VS Denver Outlaws" /></a></li>
+		            <li id="last" class="last"><a href="Images/Sports/lacrosseimg06.jpg" rel="prettyPhoto[gallery4]" title="(Denver, CO)"><img src="Images/Sports/lacrosseimg06.jpg" alt="Charlotte Hounds VS Denver Outlaws" /></a></li>
+		        </ul>
+		      </div>
+
+		      <!-- Video Game Photos - Scott Hansen -->
+		      <div id="tabs-5" class="gallery clear">
+		        <ul>
+				  <h2 class="style1">Role-Playing Games</h2>
+		            <li><a href="Images/VideoGames/Gallery/skyrim1.jpg" rel="prettyPhoto[gallery5]" title="Skyrim"><img src="Images/VideoGames/Gallery/skyrim1.jpg" alt="Skyrim" /></a></li>
+		            <li><a href="Images/VideoGames/Gallery/skyrim2.jpg" rel="prettyPhoto[gallery5]" title="Skyrim"><img src="Images/VideoGames/Gallery/skyrim2.jpg" alt="Skyrim" /></a></li>
+		            <li><a href="Images/VideoGames/Gallery/finalfantasy1.jpg" rel="prettyPhoto[gallery5]" title="Final Fantasy 13"><img src="Images/VideoGames/Gallery/finalfantasy1.jpg" alt="Final Fantasy 13" /></a></li>
+		            <li><a href="Images/VideoGames/Gallery/finalfantasy2.jpg" rel="prettyPhoto[gallery5]" title="Final Fantasy 13"><img src="Images/VideoGames/Gallery/finalfantasy2.jpg" alt="Final Fantasy 13" /></a></li>
+		            <li><a href="Images/VideoGames/Gallery/falloutgame1.jpg" rel="prettyPhoto[gallery5]" title="Fallout: New Vegas"><img src="Images/VideoGames/Gallery/falloutgame1.jpg" alt="Fallout: New Vegas" /></a></li>
+		            <li class="last"><a href="Images/VideoGames/Gallery/falloutgame2.jpg" rel="prettyPhoto[gallery5]" title="Fallout: New Vegas"><img src="Images/VideoGames/Gallery/falloutgame2.jpg" alt="Fallout: New Vegas" /></a></li>
+		          
+		          <h2 class="style1">Survival Horror</h2>
+		            <li><a href="Images/VideoGames/Gallery/residentevil1.jpg" rel="prettyPhoto[gallery5]" title="Resident Evil 2"><img src="Images/VideoGames/Gallery/residentevil1.jpg" alt="Resident Evil 2" /></a></li>
+		            <li><a href="Images/VideoGames/Gallery/residentevil2.jpg" rel="prettyPhoto[gallery5]" title="Resident Evil 2"><img src="Images/VideoGames/Gallery/residentevil2.jpg" alt="Resident Evil 2" /></a></li>
+		            <li><a href="Images/VideoGames/Gallery/silenthill1.jpg" rel="prettyPhoto[gallery5]" title="Silent Hill"><img src="Images/VideoGames/Gallery/silenthill1.jpg" alt="Silent Hill" /></a></li>
+		            <li><a href="Images/VideoGames/Gallery/silenthill2.jpg" rel="prettyPhoto[gallery5]" title="Silent Hill"><img src="Images/VideoGames/Gallery/silenthill2.jpg" alt="Silent Hill" /></a></li>
+		            <li><a href="Images/VideoGames/Gallery/deadspace1.jpg" rel="prettyPhoto[gallery5]" title="Dead Space 2"><img src="Images/VideoGames/Gallery/deadspace1.jpg" alt="Dead Space 2" /></a></li>
+		            <li class="last"><a href="Images/VideoGames/Gallery/deadspace2.jpg" rel="prettyPhoto[gallery5]" title="Dead Space 2"><img src="Images/VideoGames/Gallery/deadspace2.jpg" alt="Dead Space 2" /></a></li>
+
+				  <h2 class="style1">Platformer</h2>
+		            <li><a href="Images/VideoGames/Gallery/supermario1.jpg" rel="prettyPhoto[gallery5]" title="Super Mario Mario Bros. 3"><img src="Images/VideoGames/Gallery/supermario1.jpg" alt="Super Mario Mario Bros. 3" /></a></li>
+		            <li><a href="Images/VideoGames/Gallery/supermario2.jpg" rel="prettyPhoto[gallery5]" title="Super Mario Mario Bros. 3"><img src="Images/VideoGames/Gallery/supermario2.jpg" alt="Super Mario Mario Bros. 3" /></a></li>
+		            <li><a href="Images/VideoGames/Gallery/sonic1.jpg" rel="prettyPhoto[gallery5]" title="Sonic the Hedgehog 2"><img src="Images/VideoGames/Gallery/sonic1.jpg" alt="Sonic the Hedgehog 2" /></a></li>
+		            <li><a href="Images/VideoGames/Gallery/sonic2.jpg" rel="prettyPhoto[gallery5]" title="Sonic the Hedgehog 2"><img src="Images/VideoGames/Gallery/sonic2.jpg" alt="Sonic the Hedgehog 2" /></a></li>
+		            <li><a href="Images/VideoGames/Gallery/rayman1.jpg" rel="prettyPhoto[gallery5]" title="Rayman"><img src="Images/VideoGames/Gallery/rayman1.jpg" alt="Rayman" /></a></li>
+		            <li class="last"><a href="Images/VideoGames/Gallery/rayman2.jpg" rel="prettyPhoto[gallery5]" title="Rayman"><img src="Images/VideoGames/Gallery/rayman2.jpg" alt="Rayman" /></a></li>
+
+		          <h2 class="style1">Fighter</h2>
+		            <li><a href="Images/VideoGames/Gallery/mortalkombat1.jpg" rel="prettyPhoto[gallery5]" title="Mortal Kombat"><img src="Images/VideoGames/Gallery/mortalkombat1.jpg" alt="Mortal Kombat" /></a></li>
+		            <li><a href="Images/VideoGames/Gallery/mortalkombat2.jpg" rel="prettyPhoto[gallery5]" title="Mortal Kombat"><img src="Images/VideoGames/Gallery/mortalkombat2.jpg" alt="Mortal Kombat" /></a></li>
+		            <li><a href="Images/VideoGames/Gallery/streetfighter1.jpg" rel="prettyPhoto[gallery5]" title="Street Fighter"><img src="Images/VideoGames/Gallery/streetfighter1.jpg" alt="Street Fighter" /></a></li>
+		            <li><a href="Images/VideoGames/Gallery/streetfighter2.jpg" rel="prettyPhoto[gallery5]" title="Street Fighter"><img src="Images/VideoGames/Gallery/streetfighter2.jpg" alt="Street Fighter" /></a></li>
+		            <li><a href="Images/VideoGames/Gallery/injustice1.jpg" rel="prettyPhoto[gallery5]" title="Injustice"><img src="Images/VideoGames/Gallery/injustice1.jpg" alt="Injustice" /></a></li>
+		            <li class="last"><a href="Images/VideoGames/Gallery/injustice2.jpg" rel="prettyPhoto[gallery5]" title="Injustice"><img src="Images/VideoGames/Gallery/injustice2.jpg" alt="Injustice" /></a></li>
+		          
+		          <h2 class="style1">First-Person Shooter</h2>
+		            <li><a href="Images/VideoGames/Gallery/callofduty1.jpg" rel="prettyPhoto[gallery5]" title="Call of Duty"><img src="Images/VideoGames/Gallery/callofduty1.jpg" alt="Call of Duty" /></a></li>
+		            <li><a href="Images/VideoGames/Gallery/callofduty2.jpg" rel="prettyPhoto[gallery5]" title="Call of Duty"><img src="Images/VideoGames/Gallery/callofduty2.jpg" alt="Call of Duty" /></a></li>
+		            <li><a href="Images/VideoGames/Gallery/battlefield1.jpg" rel="prettyPhoto[gallery5]" title="Battlefield 3"><img src="Images/VideoGames/Gallery/battlefield1.jpg" alt="Battlefield 3" /></a></li>
+		            <li><a href="Images/VideoGames/Gallery/battlefield2.jpg" rel="prettyPhoto[gallery5]" title="Battlefield 3"><img src="Images/VideoGames/Gallery/battlefield2.jpg" alt="Battlefield 3" /></a></li>
+		            <li><a href="Images/VideoGames/Gallery/crysis1.jpg" rel="prettyPhoto[gallery5]" title="Crysis 2"><img src="Images/VideoGames/Gallery/crysis1.jpg" alt="Crysis 2" /></a></li>
+		            <li id="last" class="last"><a href="Images/VideoGames/Gallery/crysis2.jpg" rel="prettyPhoto[gallery5]" title="Crysis 2"><img src="Images/VideoGames/Gallery/crysis2.jpg" alt="Crysis 2" /></a></li>
+		        </ul>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+				
+		<br />
+
+		<!-- Second Footer (Dark Blank Space) -->
+		<div class="wrapper">
+		  <div id="footer" class="clear">
+		    <div class="footbox">
+    	      <h2>About Us</h2>
+                <p>We are a fun-loving group of college students who have found enjoyment in many varieties of entertainment. We have made it our mission to share this joy with you all.</p>
+		    </div>
+		    <div class="footbox">
+		    <h2>Entertainment</h2>
+		      <p>Entertainment can be found almost anywhere. YOUR entertainment comes from activities that excite YOU.  In those moments, you have found your source of entertainment.</p>
+		    </div>
+		    <div class="footbox">
+		    <h2>Keep in Touch</h2>
+		      <ul>
+		        <li><a href="https://www.facebook.com/pages/Entertainment/595350110556984" target="_blank">Check out our Facebook page</a></li>
+        		<li><a href="https://twitter.com/SowelaGroup" target="_blank">Get the latest Tweets</a></li>
+        		<li><a href="http://www.linkedin.com/profile/view?id=322757522&trk=nav_responsive_tab_profile" target="_blank">View our LinkedIn profile</a></li>
+      	      </ul>
+		    </div>
+		    <div class="footbox last">    
+		    <h2>Contact Us</h2>
+		      <ul>
+		        <li><strong class="title">Telephone: </strong>(337) 497-6548</li>
+		        <li><strong class="title">FAX Number: </strong>(337) 598-3291</li>
+		        <li><strong class="title">Email: </strong><a href="mailto:Entertainv2@yahoo.com">Entertainv2@yahoo.com</a></li><br />
+		      </ul>
+		    </div>
+		  </div>
+		</div>
+		
+		<!-- Third Footer (Dark Blank Space) -->
+		<div class="wrapper">
+		  <div id="copyright" class="clear">
+		    <p class="fl_left">Copyright &copy; 2014 - All Rights Reserved - First Row</p>
+		    <p class="fl_right">Entertainment by First Row</p>
+		  </div>
+		</div>
+	</body>
+</html>

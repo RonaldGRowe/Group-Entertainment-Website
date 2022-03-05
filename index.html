@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+	
+	<!-- Group Project
+
+         Entertainment | Home 
+         Author: 	Scott Hansen
+         Date:   	09/20/2013
+         Filename:  index.html
+  	-->
+  	
+  	<link rel="shortcut icon" href="Images/favicon.ico">
+	<link rel="icon" type="image/gif" href="animated_favicon1.gif">
+	
+	<head>
+		<title>Entertainment | Home</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<meta http-equiv="imagetoolbar" content="no" />
+		<link rel="stylesheet" href="styles/layout.css" type="text/css" />
+		<script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script>
+		<script type="text/javascript" src="scripts/jquery-photostack.js"></script>
+		<script type="text/javascript" src="scripts/jquery-coin-slider.min.js"></script>
+		<script type="text/javascript" src="scripts/jquery-ui-1.8.12.custom.min.js"></script>
+		
+		<!-- This is the Java Script for the slider -->
+		<script type="text/javascript">
+		$(document).ready(function () {
+		    $('#portfolioslider').coinslider({
+		        width: 480,
+		        height: 280,
+		        navigation: false,
+		        links: false,
+		        hoverPause: true
+		    });
+		    $("#tabcontainer").tabs({
+		        event: "click"
+		    });
+		});
+		</script>
+	</head>
+
+	<!-- Text In the Top Left -->
+	<body id="top">
+		<div class="wrapper col1">
+		  <div id="header" class="clear">
+		    <div class="fl_left">
+		      <h1><a href="index.html">Entertainment</a></h1>
+		      <p>Fun Activities for Everyone</p>
+		    </div>
+		  </div>
+		</div>
+		
+		<!-- Top Navigation Bar -->
+		<div class="wrapper col1">
+		  <div id="topbar" class="clear">
+		    <ul id="topnav">
+		      <li class="active"><a href="index.html">Home</a></li>
+		      <li><a href="motionpictures.html">Motion Pictures</a>
+		      	<ul>
+          		  <li><a href="motionpictures.html#Action Movies">Action Movies</a></li>
+          		  <li><a href="motionpictures.html#Animated Movies">Animated Movies</a></li>
+          		  <li><a href="motionpictures.html#Comedy Movies">Comedy Movies</a></li>
+          		  <li><a href="motionpictures.html#Horror Movies">Horror Movies</a></li>
+          		  <li><a href="motionpictures.html#T.V. Shows">T.V. Shows</a></li>
+        		</ul>
+			  </li>
+		      <li><a href="music.html">Music</a>
+   		      	<ul>
+          		  <li><a href="music.html#Jazz">Jazz</a></li>
+          		  <li><a href="music.html#Blues">Blues</a></li>
+          		  <li><a href="music.html#Zydeco">Zydeco</a></li>
+          		  <li><a href="music.html#Swamp Pop">Swamp Pop</a></li>
+          		  <li><a href="music.html#Live Music">Live Music</a></li>
+        		</ul>
+        	  </li>
+		      <li><a href="outdoors.html">Out Doors</a>
+   		      	<ul>
+          		  <li><a href="outdoors.html#Fishing">Fishing</a></li>
+          		  <li><a href="outdoors.html#Biking">Biking</a></li>
+          		  <li><a href="outdoors.html#Hunting">Hunting</a></li>
+          		  <li><a href="outdoors.html#Rafting & Kayaking">Water Sports</a></li>
+				  <li><a href="outdoors.html#Skiing">Snow Sports</a></li>
+        		</ul>
+        	  </li>
+		      <li><a href="sports.html">Sports</a>
+   		      	<ul>
+          		  <li><a href="sports.html#Basketball">Basketball</a></li>
+          		  <li><a href="sports.html#Baseball">Baseball</a></li>
+          		  <li><a href="sports.html#Football">Football</a></li>
+          		  <li><a href="sports.html#Soccer">Soccer</a></li>
+          		  <li><a href="sports.html#Lacrosse">Lacrosse</a></li>
+        		</ul>
+        	  </li>
+		      <li><a href="videogames.html">Video Games</a> 
+   		      	<ul>
+          		  <li><a href="videogames.html#Role-Playing Games">Role-Playing Games</a></li>
+          		  <li><a href="videogames.html#Survival Horror">Survival Horror</a></li>
+          		  <li><a href="videogames.html#Platformer">Platformer</a></li>
+          		  <li><a href="videogames.html#Fighter">Fighter</a></li>
+          		  <li><a href="videogames.htmlFirst-Person Shooter">First-Person Shooter</a></li>
+        		</ul>
+        	  </li>
+      		  <li><a href="gallery.html">Gallery</a></li>  
+      		  <li class="last"><a href="feedback.html">Feedback</a></li>
+   		    </ul>
+  		  </div>
+	    </div>
+	    
+		<!-- Section With a List and Description of All Categories -->
+		<div class="wrapper col1">
+		  <div id="featured_slide">
+		    <div id="slider">
+		      <ul id="categories">
+		        <li class="category">
+		          <h2>Motion Pictures</h2>
+		            <a href="motionpictures.html"><img src="Images/MotionPictures/motionpictures.jpg" alt="Motion Pictures" /></a>
+		              <p>"Movies allow us to escape but it is more than that, movies take us to places we have never been and inside the minds of people different from ourselves."</p>
+		              
+		              <br />
+		              <br />
+		              <br />
+		          
+		              <p class="readmore"><a href="motionpictures.html">Read More &raquo;</a></p>          
+		        </li>
+		        <li class="category">
+		          <h2>Music</h2>
+		            <a href="music.html"><img src="Images/Music/music.jpg" alt="Music" /></a>
+		              <p>"Popular music belongs to any of a number of musical genres 'having wide appeal' and is typically distributed to large audiences through the music industry."</p>
+		            
+		              <br />
+		              <br />
+		              <br />
+		            
+		              <p class="readmore"><a href="music.html">Read More &raquo;</a></p>
+		        </li>
+		        <li class="category">
+		          <h2>Outdoors</h2>
+		            <a href="outdoors.html"><img src="Images/OutDoors/outdoors.jpg" alt="Out Doors" /></a>
+		              <p>"Sitting in an old growth forest makes people feel at peace. The oxygen fills their lungs, and the energy of the ancient trees fills them with wonderment."</p>
+		              
+		              <br />
+		              <br />
+		              <br />
+		              
+		              <p class="readmore"><a href="outdoors.html">Read More &raquo;</a></p>
+		        </li>
+		        <li class="category">
+		          <h2>Sports</h2>
+		            <a href="sports.html"><img src="Images/Sports/sports.jpg" alt="" /></a>
+		              <p>"Many watch for the game itself. Some, as an avenue for catharsis or a way to escape the pressures of life or work and others watch for certain players."</p>
+		              
+		              <br />
+		              <br />
+		              <br />
+		              
+		              <p class="readmore"><a href="sports.html">Read More &raquo;</a></p>
+		        </li>
+		        <li class="category">
+		          <h2>Video Games</h2>
+		            <a href="videogames.html"><img src="Images/VideoGames/videogames.jpg" alt="" /></a>
+		              <p>"Video games are a pleasant way to spend any free time, especially if they are slightly challenging. People also play games to soak in the beautiful scenery."</p>
+		              
+		              <br />
+		              <br />
+		              <br />
+		              
+		              <p class="readmore"><a href="videogames.html">Read More &raquo;</a></p>
+		        </li>
+		      </ul>
+		      <a class="prev disabled"></a> <a class="next disabled"></a>
+		      <div style="clear:both"></div>
+		    </div>
+		  </div>
+		</div>
+		
+		<!-- First Footer (White Blank Space) -->
+		<div class="height">
+		  <div class="bannercontainer">
+		  	<div class="photobanner">
+		  	  <a href="motionpictures.html#T.V. Shows" class="first"><img  src="Images/MotionPictures/Gallery/T.V.Shows/BreakingBadImg01.jpg" alt="pic1"></a>
+		  	  <a href="music.html#Jazz"><img src="Images/Music/jazz1.jpg" alt="pic2"></a>
+		  	  <a href="sports.html#Lacrosse"><img src="Images/Sports/lacrosseimg01.jpg" alt="pic3"></a>
+		  	  <a href="videogames.html#Survival Horror"><img src="Images/VideoGames/SurvivalHorror/silent.jpg" alt="pic4"></a>
+		  	  <a href="outdoors.html#Skiing"><img src="Images/OutDoors/Mainpage/outdoorsmg10.jpg" alt="pic5"></a>		  	  
+		  	  <a href="motionpictures.html#Animated Movies"><img src="Images/MotionPictures/Gallery/AnimatedMovies/MonstersUniversityImg01.jpg" alt="pic6"></a>
+		  	  <a href="music.html#Jazz"><img src="Images/Music/jazz2.png" alt="pic7"></a>
+		  	  <a href="outdoors.html#Rafting & Kayaking"><img src="Images/OutDoors/Mainpage/outdoorsmg8.jpg" alt="pic8"></a>
+		  	  <a href="sports.html#Soccer"><img src="Images/Sports/soccerimg02.jpg" alt="pic9"></a>		  	  
+		  	  <a href="videogames.htmlFirst-Person Shooter"><img src="Images/VideoGames/FPS/callofduty.jpg" alt="pic10"></a>		  	  
+		  	  <a href="motionpictures.html#Comedy Movies"><img src="Images/MotionPictures/Gallery/ComedyMovies/IdentityThiefImg01.jpg" alt="pic11"></a>
+		  	  <a href="music.html#Blues"><img src="Images/Music/blues2.jpg" alt="pic12"></a>
+		  	  <a href="videogames.html#Role-Playing Games"><img src="Images/VideoGames/RPG/fallout.jpg" alt="pic13"></a>
+		  	  <a href="outdoors.html#Rafting & Kayaking"><img src="Images/OutDoors/Mainpage/outdoorsmg9.jpg" alt="pic14"></a>
+		  	  <a href="sports.html#Baseball"><img src="Images/Sports/baseballimg01.jpg" alt="pic15"></a>
+		  	  <a href="motionpictures.html#Animated Movies"><img src="Images/MotionPictures/Gallery/AnimatedMovies/MonstersUniversityImg02.jpg" alt="pic16"></a>
+		  	  <a href="music.html#Live Music"><img src="Images/Music/livemusic1.jpg" alt="pic17"></a>
+		  	  <a href="sports.html#Soccer"><img src="Images/Sports/soccerimg01.jpg" alt="pic18"></a>	  	  
+		  	  <a href="videogames.html#Platformer"><img src="Images/VideoGames/Platformer/Mario.jpg" alt="pic19"></a>
+		  	  <a href="outdoors.html#Hunting"><img src="Images/OutDoors/Mainpage/outdoorsmg4.jpg" alt="pic20"></a>
+		  	  <a href="motionpictures.html#Comedy Movies"><img src="Images/MotionPictures/Gallery/ComedyMovies/IdentityThiefImg02.jpg" alt="pic21"></a>
+		  	  <a href="music.html#Swamp Pop"><img src="Images/Music/swamp pop1.jpg" alt="pic22"></a>
+		  	  <a href="sports.html#Lacrosse"><img src="Images/Sports/lacrosseimg02.jpg" alt="pic23"></a>
+		  	  <a href="outdoors.html#Hunting"><img src="Images/OutDoors/Mainpage/outdoorsmg5.jpg" alt="pic24"></a>
+		  	  <a href="videogames.html#Fighter"><img src="Images/VideoGames/Fighter/mk.jpg" alt="pic25"></a>
+		  	  <a href="motionpictures.html#Animated Movies"><img src="Images/MotionPictures/Gallery/AnimatedMovies/DespicableMe2Img01.jpg" alt="pic26"></a>
+		  	  <a href="music.html#Zydeco"><img src="Images/Music/zydeco2.jpg" alt="pic27"></a>
+		  	  <a href="videogames.htmlFirst-Person Shooter"><img src="Images/VideoGames/FPS/crysis.jpg" alt="pic28"></a>
+		  	  <a href="outdoors.html#Fishing"><img src="Images/OutDoors/Mainpage/outdoorsmg2.jpg" alt="pic29"></a>
+		  	  <a href="sports.html#Football"><img src="Images/Sports/footballimg02.jpg" alt="pic30"></a>
+		  	  <a href="motionpictures.html#Comedy Movies"><img src="Images/MotionPictures/Gallery/ComedyMovies/21&OverImg01.jpg" alt="pic31"></a>
+		  	  <a href="music.html#Zydeco"><img src="Images/Music/zydeco1.jpg" alt="pic32"></a>		  	  
+		  	  <a href="outdoors.html#Fishing"><img src="Images/OutDoors/Mainpage/outdoorsmg3.jpg" alt="pic33"></a>
+		  	  <a href="videogames.html#Role-Playing Games"><img src="Images/VideoGames/RPG/Skyrim.jpg" alt="pic34"></a>
+		  	  <a href="sports.html#Football"><img src="Images/Sports/footballimg01.jpg" alt="pic35"></a>		  	  
+		  	  <a href="motionpictures.html#Animated Movies"><img src="Images/MotionPictures/Gallery/AnimatedMovies/DespicableMe2Img02.jpg" alt="pic36"></a>
+		  	  <a href="music.html#Live Music"><img src="Images/Music/livemusic2.jpg" alt="pic37"></a> 
+		  	  <a href="outdoors.html#Hunting"><img src="Images/OutDoors/Mainpage/outdoorsmg6.jpg" alt="pic38"></a>
+		  	  <a href="videogames.html#Fighter"><img src="Images/VideoGames/Fighter/injust.jpg" alt="pic39"></a>
+		  	  <a href="sports.html#Basketball"><img src="Images/Sports/basketballimg02.jpg" alt="pic40"></a>		  	  
+		  	  <a href="motionpictures.html#Comedy Movies"><img src="Images/MotionPictures/Gallery/ComedyMovies/21&OverImg02.jpg" alt="pic41"></a>
+		  	  <a href="music.html#Blues"><img src="Images/Music/blues1.jpg" alt="pic42"></a>
+		  	  <a href="sports.html#Basketball"><img src="Images/Sports/basketballimg01.jpg" alt="pic43"></a>
+		  	  <a href="videogames.htmlFirst-Person Shooter"><img src="Images/VideoGames/FPS/battle.jpg" alt="pic44"></a>
+		  	  <a href="outdoors.html#Fishing"><img src="Images/OutDoors/Mainpage/outdoorsmg1.jpg" alt="pic45"></a>
+		  	  <a href="motionpictures.html#Animated Movies"><img src="Images/MotionPictures/Gallery/AnimatedMovies/TheSmurfs2Img01.jpg" alt="pic46"></a>
+		  	  <a href="music.html#Swamp Pop"><img src="Images/Music/swamp pop2.jpg" alt="pic47"></a>
+		  	  <a href="videogames.html#Fighter"><img src="Images/VideoGames/Fighter/street.jpg" alt="pic48"></a>
+		  	  <a href="outdoors.html#Rafting & Kayaking"><img src="Images/OutDoors/Mainpage/outdoorsmg7.jpg" alt="pic49"></a>
+		  	  <a href="sports.html#Baseball"><img src="Images/Sports/baseballimg02.jpg" alt="pic50"></a>
+		  	  <a href="motionpictures.html#T.V. Shows"><img  src="Images/MotionPictures/Gallery/T.V.Shows/BreakingBadImg01.jpg" alt="pic1"></a>
+		  	  <a href="music.html#Jazz"><img src="Images/Music/jazz1.jpg" alt="pic2"></a>
+		  	  <a href="sports.html#Lacrosse"><img src="Images/Sports/lacrosseimg01.jpg" alt="pic3"></a>
+		  	  <a href="videogames.html#Survival Horror"><img src="Images/VideoGames/SurvivalHorror/silent.jpg" alt="pic4"></a>
+		  	  <a href="outdoors.html#Skiing"><img src="Images/OutDoors/Mainpage/outdoorsmg10.jpg" alt="pic5"></a>		  	  
+		  	  <a href="motionpictures.html#Animated Movies"><img src="Images/MotionPictures/Gallery/AnimatedMovies/MonstersUniversityImg01.jpg" alt="pic6"></a>
+		  	  <a href="music.html#Jazz"><img src="Images/Music/jazz2.png" alt="pic7"></a>
+		  	  <a href="outdoors.html#Rafting & Kayaking"><img src="Images/OutDoors/Mainpage/outdoorsmg8.jpg" alt="pic8"></a>
+		  	  <a href="sports.html#Soccer"><img src="Images/Sports/soccerimg02.jpg" alt="pic9"></a>		  	  
+		  	  <a href="videogames.htmlFirst-Person Shooter"><img src="Images/VideoGames/FPS/callofduty.jpg" alt="pic10"></a>		  	  
+		  	  <a href="motionpictures.html#Comedy Movies"><img src="Images/MotionPictures/Gallery/ComedyMovies/IdentityThiefImg01.jpg" alt="pic11"></a>
+		  	  <a href="music.html#Blues"><img src="Images/Music/blues2.jpg" alt="pic12"></a>
+		  	  <a href="videogames.html#Role-Playing Games"><img src="Images/VideoGames/RPG/fallout.jpg" alt="pic13"></a>
+		  	  <a href="outdoors.html#Rafting & Kayaking"><img src="Images/OutDoors/Mainpage/outdoorsmg9.jpg" alt="pic14"></a>		  		
+		  	</div>		  			   
+		  </div>
+		</div>
+
+		<br />
+
+		<!-- Second Footer (Dark Blank Space) -->
+		<div class="wrapper">
+		  <div id="footer" class="clear">
+		    <div class="footbox">
+    	      <h2>About Us</h2>
+                <p>We are a fun-loving group of college students who have found enjoyment in many varieties of entertainment. We have made it our mission to share this joy with you all.</p>
+		    </div>
+		    <div class="footbox">
+		    <h2>Entertainment</h2>
+		      <p>Entertainment can be found almost anywhere. YOUR entertainment comes from activities that excite YOU.  In those moments, you have found your source of entertainment.</p>
+		    </div>
+		    <div class="footbox">
+		    <h2>Keep in Touch</h2>
+		      <ul>
+		        <li><a href="https://www.facebook.com/pages/Entertainment/595350110556984" target="_blank">Check out our Facebook page</a></li>
+        		<li><a href="https://twitter.com/SowelaGroup" target="_blank">Get the latest Tweets</a></li>
+        		<li><a href="http://www.linkedin.com/profile/view?id=322757522&trk=nav_responsive_tab_profile" target="_blank">View our LinkedIn profile</a></li>
+      	      </ul>
+		    </div>
+		    <div class="footbox last">    
+		    <h2>Contact Us</h2>
+		      <ul>
+		        <li><strong class="title">Telephone: </strong>(337) 497-6548</li>
+		        <li><strong class="title">FAX Number: </strong>(337) 598-3291</li>
+		        <li><strong class="title">Email: </strong><a href="mailto:Entertainv2@yahoo.com">Entertainv2@yahoo.com</a></li><br />
+		      </ul>
+		    </div>
+		  </div>
+		</div>
+		
+		<!-- Third Footer (Dark Blank Space) -->
+		<div class="wrapper">
+		  <div id="copyright" class="clear">
+		    <p class="fl_left">Copyright &copy; 2014 - All Rights Reserved - First Row</p>
+		    <p class="fl_right">Entertainment by First Row</p>
+		  </div>
+		</div>
+	</body>
+</html>
