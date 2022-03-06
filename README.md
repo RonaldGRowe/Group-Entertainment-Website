@@ -1,2 +1,2 @@
-# Group-Entertainment-Website
-A group project website containing entertainment options.
+# Entertainment Website
+A group project website containing entertainment options for everyone.
