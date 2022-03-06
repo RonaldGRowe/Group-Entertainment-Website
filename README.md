@@ -15,7 +15,7 @@ The original design was updated to increase readability and allow more entertain
 - Feedback page
 - Additional content
 
-# Perosnal Accomplishments
+# Personal Accomplishments
 - Found and used a Jquery Plugin to achieve scrolling of multiple entertainment options
 - Created a CSS slider using images to look like a movie film strip on the homepage
 - Fixed a bug that would not allow for transparent backgrounds on links due to the template's stylesheet
@@ -23,6 +23,6 @@ The original design was updated to increase readability and allow more entertain
 
 # Issues
 - Everyone on the team did not contribute equally
-- White background behind links due to using the template (fixed)
+- A white background behind links due to using the template (fixed)
 - CSS slider glitches as images move across the screen (downside of this technology)
 - Colors chosen to improve readability do not render the same on every display
